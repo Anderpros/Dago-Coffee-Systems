@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dago Coffee – Sales & Order</title>
+  <link rel="stylesheet" href="/ui/style.css" />
+</head>
+<body>
+  <div id="app">
+
+    <!-- HOME VIEW -->
+    <section id="homeView" class="view active-view">
+      <div class="center-box">
+        <div class="logo-container">
+            <img src="/ui/img/DAGO.png" class="hero-logo" alt="DAGO Home Image">
+        </div>
+        <div class="home-buttons">
+          <button id="btnCreateOrder" class="primary-btn">Create Order</button>
+          <button id="btnReportSales" class="secondary-btn">Report Sales</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- CREATE ORDER VIEW -->
+    <section id="orderView" class="view">
+      <header class="top-bar">
+        <button id="btnBackFromOrder" class="link-btn">← Back</button>
+        <div class="top-title">Create Order</div>
+      </header>
+
+      <main class="order-main">
+        <div class="drinks-grid" id="drinksGrid">
+          <!-- Cards injected by JS -->
+        </div>
+      </main>
+
+      <footer class="order-footer">
+        <div class="total-label">Total:</div>
+        <div class="total-amount" id="totalAmount">IDR 0</div>
+        <button id="btnSubmitOrder" class="primary-btn small">Submit</button>
+      </footer>
+    </section>
+
+    <!-- REPORT VIEW -->
+    <section id="reportView" class="view">
+      <header class="top-bar">
+        <button id="btnBackFromReport" class="link-btn">← Back</button>
+        <div class="top-title">Sales Report</div>
+      </header>
+
+      <main class="report-main">
+        <div id="reportSummary" class="report-summary"></div>
+        <table class="report-table">
+          <thead>
+            <tr>
+              <th>Order ID</th>
+              <th>Date</th>
+              <th>Items</th>
+              <th>Amount</th>
+              <th>Method</th>
+              <th>Ticket</th>
+            </tr>
+          </thead>
+          <tbody id="reportTableBody">
+            <!-- Rows injected by JS -->
+          </tbody>
+        </table>
+      </main>
+    </section>
+
+    <!-- MODALS -->
+
+    <!-- Payment choice modal -->
+    <div id="paymentModal" class="modal hidden">
+      <div class="modal-content">
+        <h2>Choose Payment Method</h2>
+        <div class="modal-buttons">
+          <button id="btnPayCash" class="primary-btn">Cash</button>
+          <button id="btnPayQris" class="secondary-btn">QRIS</button>
+        </div>
+        <button class="link-btn small" id="btnClosePaymentModal">Close</button>
+      </div>
+    </div>
+
+    <!-- Cash confirm modal -->
+    <div id="cashModal" class="modal hidden">
+      <div class="modal-content">
+        <h2>Cash Payment</h2>
+        <p>Confirm payment?</p>
+        <div class="modal-buttons">
+          <button id="btnCashPaid" class="primary-btn">Paid</button>
+          <button id="btnCashCancel" class="secondary-btn">Cancel</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- QRIS info modal -->
+    <div id="qrisModal" class="modal hidden">
+      <div class="modal-content">
+        <h2>QRIS</h2>
+        <p>"Will be collaborate with QRIS soon."</p>
+        <button id="btnQrisBack" class="primary-btn">Back</button>
+      </div>
+    </div>
+
+    <!-- Password modal for report -->
+    <div id="passwordModal" class="modal hidden">
+      <div class="modal-content">
+        <h2>Enter Password</h2>
+        <input type="password" id="reportPasswordInput" placeholder="Password" />
+        <div class="modal-buttons">
+          <button id="btnSubmitPassword" class="primary-btn">Submit</button>
+          <button id="btnCancelPassword" class="secondary-btn">Cancel</button>
+        </div>
+        <p id="passwordError" class="error-text"></p>
+      </div>
+    </div>
+
+    <!-- Toast / small popup -->
+    <div id="toast" class="toast hidden"></div>
+
+  </div>
+
+  <script src="/ui/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+[
+  {
+    "orderId": "ORD-2025-12-01-00004",
+    "paidAt": "2025-11-30T17:23:53.034Z",
+    "cartId": "CART-WEB",
+    "amount": 20000,
+    "method": "CASH",
+    "status": "PAID",
+    "items": [
+      {
+        "sku": "AMERICANO",
+        "name": "Americano",
+        "qty": 1,
+        "unitPrice": 20000
+      }
+    ],
+    "kitchenTicketId": "KT-0004"
+  },
+  {
+    "orderId": "ORD-2025-12-01-00005",
+    "paidAt": "2025-11-30T17:24:26.882Z",
+    "cartId": "CART-WEB",
+    "amount": 55000,
+    "method": "CASH",
+    "status": "PAID",
+    "items": [
+      {
+        "sku": "CAPPUCCINO",
+        "name": "Cappuccino",
+        "qty": 1,
+        "unitPrice": 27000
+      },
+      {
+        "sku": "MATCHA",
+        "name": "Matcha",
+        "qty": 1,
+        "unitPrice": 28000
+      }
+    ],
+    "kitchenTicketId": "KT-0005"
+  },
+  {
+    "orderId": "ORD-2025-12-01-00001",
+    "paidAt": "2025-11-30T17:27:55.181Z",
+    "cartId": "CART-WEB",
+    "amount": 52000,
+    "method": "CASH",
+    "status": "PAID",
+    "items": [
+      {
+        "sku": "LATTE",
+        "name": "Latte",
+        "qty": 1,
+        "unitPrice": 25000
+      },
+      {
+        "sku": "CAPPUCCINO",
+        "name": "Cappuccino",
+        "qty": 1,
+        "unitPrice": 27000
+      }
+    ],
+    "kitchenTicketId": "KT-0001"
+  }
+]

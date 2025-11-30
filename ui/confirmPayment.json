@@ -1,0 +1,8 @@
+{
+  "orderId": "ORD-2025-11-30-00007",
+  "transactionId": "TXN-987654321",
+  "amount": 65000,
+  "method": "QRIS",
+  "status": "CAPTURED",
+  "paidAt": "2025-10-09T01:24:10Z"
+}
