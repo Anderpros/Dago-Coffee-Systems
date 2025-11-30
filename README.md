@@ -1,8 +1,8 @@
-# ☕ **Dago Coffee — Sales & Order Subsystem API**
+# ☕ **Dago Coffee - Sales & Order Subsystem API**
 
 ### System Integration Final Project
 
-**Author:** Group 1 (Leonard, Abi, Gabby) – Information Systems, Sampoerna University
+**Author:** Group 1 (Leonard, Abi, Gabby) - Information Systems, Sampoerna University
 **Subsystem:** *Sales & Order*
 
 ---
